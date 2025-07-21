@@ -3,29 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🗓️ Haftalık Yapılacaklar</title>
+  <title>🗓️ Haftalık Plan</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🗓️ Haftalık Plan</h1>
-
-    <div class="day-tabs">
-      <button class="day-btn active" data-day="Pazartesi">Pzt</button>
-      <button class="day-btn" data-day="Salı">Salı</button>
-      <button class="day-btn" data-day="Çarşamba">Çar</button>
-      <button class="day-btn" data-day="Perşembe">Per</button>
-      <button class="day-btn" data-day="Cuma">Cum</button>
-      <button class="day-btn" data-day="Cumartesi">Cts</button>
-      <button class="day-btn" data-day="Pazar">Paz</button>
+    <h1>🗓️ Haftalık Yapılacaklar Listesi</h1>
+    
+    <div id="week-container">
+      <!-- Her gün burada oluşturulacak -->
     </div>
-
-    <form id="task-form">
-      <input type="text" id="task-input" placeholder="Yeni görev gir..." required />
-      <button type="submit">Ekle</button>
-    </form>
-
-    <ul id="task-list"></ul>
   </div>
 
   <script src="script.js"></script>

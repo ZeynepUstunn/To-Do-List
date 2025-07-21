@@ -8,55 +8,50 @@ body {
 }
 
 .container {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 350px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  width: 100%;
 }
 
 h1 {
   text-align: center;
   color: #333;
+  margin-bottom: 30px;
 }
 
-.day-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-bottom: 15px;
+#week-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
-.day-btn {
-  flex: 1 1 calc(33% - 10px);
-  padding: 6px;
-  background-color: #eee;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
+.day-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.day-btn.active {
-  background-color: #00aaff;
-  color: white;
+.day-card h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 form {
   display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
-input {
+form input {
   flex: 1;
-  padding: 8px;
+  padding: 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button[type="submit"] {
-  padding: 8px 12px;
+form button {
+  padding: 6px 10px;
   background-color: #00aaff;
   color: white;
   border: none;
@@ -67,14 +62,13 @@ button[type="submit"] {
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 6px;
   border-bottom: 1px solid #ddd;
 }
 
