@@ -1,35 +1,62 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .container {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  width: 300px;
+  width: 350px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
   text-align: center;
+  color: #333;
+}
+
+.day-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.day-btn {
+  flex: 1 1 calc(33% - 10px);
+  padding: 6px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.day-btn.active {
+  background-color: #00aaff;
+  color: white;
 }
 
 form {
   display: flex;
   gap: 10px;
+  margin-bottom: 15px;
 }
 
 input {
   flex: 1;
   padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-button {
-  padding: 8px 10px;
+button[type="submit"] {
+  padding: 8px 12px;
   background-color: #00aaff;
   color: white;
   border: none;
@@ -40,17 +67,26 @@ button {
 ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin: 0;
 }
 
 li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 8px;
   border-bottom: 1px solid #ddd;
 }
 
-li.completed {
+li.completed span {
   text-decoration: line-through;
   color: gray;
+}
+
+li button {
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
