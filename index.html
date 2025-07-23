@@ -7,11 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <div class="agenda-box">
     <h1>🗓️ Haftalık Yapılacaklar Listesi</h1>
     
-    <div id="week-container">
-      <!-- Her gün burada oluşturulacak -->
+    <div class="main-layout">
+      <div id="week-container">
+        <!-- Günler buraya yüklenecek -->
+      </div>
+
+      <div class="notes-section">
+        <h2>🗒️ Notlar</h2>
+        <form id="notes-form">
+          <input type="text" id="note-input" placeholder="Not ekle..." required />
+          <button type="submit">Ekle</button>
+        </form>
+        <ul id="notes-list"></ul>
+      </div>
     </div>
   </div>
 
